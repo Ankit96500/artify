@@ -38,7 +38,7 @@ const AppContextProvider = ({ children }: any) => {
 
     const loadCreditData = async () => {
         try {
-            const data = await fetch('http://localhost:4000/api/user/credit', {
+            const data = await fetch(backendUrl + '/api/user/credit', {
                 method: "GET",
                 headers: {
                     'Content-Type': 'application/json',
