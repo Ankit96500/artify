@@ -9,11 +9,11 @@ import { useNavigate } from 'react-router-dom';
 
 function BuyCredit() {
 
-  const { user, setUser, backendUrl, setShowLogin, loadCreditData } = useContext(AppContext);
+  const { user, backendUrl, setShowLogin, loadCreditData } = useContext(AppContext);
   const navigate = useNavigate();
 
 
-  const initPay = async (order) => {
+  const initPay = async (order: any) => {
 
     var options = {
       "key": import.meta.env.VITE_RAZORPAY_KEY_ID, // Enter the Key ID generated from the Dashboard
@@ -23,7 +23,7 @@ function BuyCredit() {
       "description": "Test Transaction for payment",
       "order_id": order.id, //
       "receipt": order.receipt,
-      handler: async (response:any) => {
+      handler: async (response: any) => {
         try {
           const verifyPaymentResult = await fetch(backendUrl + '/api/user/verify', {
             method: "POST",
@@ -47,7 +47,7 @@ function BuyCredit() {
             toast.success("Credits added successfully")
           }
 
-        } catch (error) {
+        } catch (error: any) {
           toast.error(error)
         }
 
@@ -84,7 +84,7 @@ function BuyCredit() {
         initPay(result.order);
       }
 
-    } catch (error) {
+    } catch (error: any) {
       toast.error(error)
     }
   }
@@ -105,7 +105,7 @@ function BuyCredit() {
       <h1 className='text-center text-3xl font-medium mb-6 sm:mb-10'>Choose the plans that works for you</h1>
 
       <div className='flex flex-wrap justify-center items-center gap-6 text-left'>
-        {plans.map((item, index) => (
+        {plans.map((item: any, index: any) => (
           <div key={index}
             className='bg-white rounded-lg drop-shadow-sm py-12 px-8
         text-gray-600 hover:scale-105 transition-all duration-500

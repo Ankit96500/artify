@@ -16,7 +16,7 @@ function Result() {
 
 
 
-  const onSubmitHandler = async (e) => {
+  const onSubmitHandler = async (e:any) => {
     e.preventDefault();
 
     if(!input) return;
