@@ -1,0 +1,54 @@
+<svg width="144" height="38" viewBox="0 0 144 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="artifyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon: Text A to Image frame -->
+  <g>
+    <!-- Letter A -->
+    <path d="M 5 27 L 9 14 L 13 27" 
+          fill="none" 
+          stroke="url(#artifyGrad)" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <line x1="6.5" y1="23" x2="11.5" y2="23" 
+          stroke="url(#artifyGrad)" 
+          stroke-width="2.5" 
+          stroke-linecap="round"/>
+    
+    <!-- Arrow -->
+    <path d="M 13.5 19 L 17.5 19" 
+          stroke="url(#artifyGrad)" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+    <path d="M 15.5 17.5 L 17.5 19 L 15.5 20.5" 
+          fill="none" 
+          stroke="url(#artifyGrad)" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Image frame -->
+    <rect x="18" y="11" width="13" height="13" 
+          rx="2" 
+          fill="none" 
+          stroke="url(#artifyGrad)" 
+          stroke-width="2.5"/>
+    
+    <!-- Sun -->
+    <circle cx="21.5" cy="14.5" r="1.5" fill="url(#artifyGrad)"/>
+    
+    <!-- Mountain -->
+    <path d="M 19 22 L 22 17 L 25 21 L 28 16 L 30 21 L 30 23 L 19 23 Z" 
+          fill="url(#artifyGrad)" 
+          opacity="0.6"/>
+  </g>
+  
+  <!-- Text: Artify -->
+  <text x="38" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1F2937">Artify</text>
+</svg>
