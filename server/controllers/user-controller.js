@@ -114,8 +114,8 @@ export const paymentRazorpay = async (req, res) => {
                 credits = 5
                 break;
 
-            case 'Advance':
-                plan = "Advance"
+            case 'Advanced':
+                plan = "Advanced"
                 amount = 50
                 credits = 50
                 break;
