@@ -85,7 +85,7 @@ function Header() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.1, duration: 0.8 }}
 
-                className='mt-2 text-neutral-600'>Generated images from imagify</motion.p>
+                className='mt-2 text-neutral-600'>Generated images from artify</motion.p>
 
         </motion.div>
     )
